@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="blueBg">
+        <div class="box signin">
+            <h2>Already Have an Account ?</h2>
+            <button class="signinBtn">Sign in</button>
+        </div>
+        <div class="box signup">
+            <h2>Don't Have an Account ?</h2>
+            <button class="signupBtn">Sign up</button>
+        </div>
+    </div>
+    <div class="formBx">
+        <div class="form signinForm">
+            <form [formGroup] = "formGroup" (ngSubmit)="login()">
+                <h3>Sign In</h3>
+                <input type="text" formControlName="email" placeholder="Username">
+                <input type="password" formControlName="password" placeholder="Password">
+                <input type="submit" value="Login">
+                <a href="#" class="forgot">Forgot Password</a>
+            </form>
+        </div>
+        <div class="form signupForm">
+            <form [formGroup]="formGroup" (ngSubmit)="signUp()">
+                <h3>Sign Up</h3>
+                <input type="text" formControlName="fullname" placeholder="Username">
+                <input type="text" formControlName="email" placeholder="Email Address">
+                <input type="text" formControlName="mobile" placeholder="Mobile Number">
+                <input type="password" formControlName="password" placeholder="Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+</div>
+

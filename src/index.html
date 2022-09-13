@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Admin Panel Layout</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- ? BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <!-- ? MONTSERRAT FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- ? MAT ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+  <style>
+    .modal-backdrop.fade.show {
+      z-index: -1 !important;
+    }
+  </style>
+  <!-- <script src="sweetalert2.all.min.js"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css"> -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"/>
+  
+</head>
+
+<body class="mat-typography">
+  <app-root></app-root>
+  <!-- ? BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <SCRIPT language=JavaScript>
+    var message = "For any query? please contact with our support team (0184-6125306).Thank You.";
+
+    // 1st method to block inspect code:
+
+    function rtclickcheck(keyp) {
+      if (navigator.appName == "Netscape" && keyp.which == 3) {
+        alert(message);
+        return false;
+      }
+
+
+      if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) {
+        alert(message);
+        return false;
+      }
+    }
+
+
+
+    document.onmousedown = rtclickcheck;
+
+
+//2nd method to block inspect code:
+
+    // window.oncontextmenu = function () {
+    //   alert(message);
+    //   return false;
+    // }
+    // document.onkeydown = function (e) {
+    //   if (window.event.keyCode == 123 || e.button == 2)
+    //     alert(message);
+    //   return false;
+    // }
+  </SCRIPT>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</body>
+
+</html>

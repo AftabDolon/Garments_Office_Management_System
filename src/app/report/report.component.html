@@ -1,0 +1,63 @@
+<div class="attendance">
+    <div class="attendance-list">
+        <h1 class="ml-3 fw-bold text-success mt-2">Attendance Report</h1>
+        <button style=" margin-left: 30px; font-weight: bold;" mat-raised-button color="accent" (click)="generate()"><i class='fas fa-plus-circle fa-lg'></i>&nbsp;&nbsp;Generate Report&nbsp;&nbsp;</button>
+        </div>
+    </div>
+        
+        <div *ngIf="!success" class="row mt-5">
+            <div class="col-md-12">
+                <h1 class=" text-center text-secondary fw-bold">No Data, Please Click the Generate Report button and Pick Your Specific Date!</h1>
+            </div>
+        </div>
+
+
+        <div *ngIf="success" class="container">
+        <div class="row" style="float: right;">
+            <div class="col-md-12" style="margin-right: 30px;">
+                
+                <input style="width: 100px;" class="mr-2" type="date">
+                <input style="width: 100px;" type="date">
+                <!-- <button type="button" class="btn btn-success ml-3 fw-bold">Show</button> -->
+                <button mat-raised-button class="fw-bold ml-3" color="primary" (click)="showUser()">Show</button>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col-md-12 mt-5">
+            
+            <div class="">
+                <button class="mb-3 " style="float: right;" mat-mini-fab color="warn" (click)="exportexcel()"><i class='fas fa-download fa-lg'></i></button>
+                <table id="excel-table">
+                    
+                    <thead>
+                      <tr>
+                        <th>Employee ID</th>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Punch In Time</th>
+                        <th>Punch Out Time</th>
+                        <th>Working Duration</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let item of allPerson">
+                        <td><a href="#">{{item.employee_id}}</a></td>
+                        <td>{{item.fullname}}</td>
+                        <td>{{item.date | date: 'MMM d, y'}}</td>
+                        <td>
+                          <p class="status status-paid">{{item.punch_in }}</p>
+                        </td>
+                        <td><p class="status status-pending">{{item.punch_out}}</p></td>
+                        <td><p class="">{{item.working}}</p></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    
+    </div>
+        </div>
+        

@@ -1,0 +1,28 @@
+<div class="container">
+<div class="row justify-content mt-5" style="margin-left: 25%;">
+    <div class="col-md-8 card">
+        <div class="row">
+            <h2 class="col mt-3 ml-5">{{dateTime | date: 'MMMM d, y, h:mm:ss a'}}</h2>
+        </div>
+        <hr>
+        <form [formGroup] = "formGroup">
+            <div class="form-group mt-3">
+                <label class="fw-bold mb-3">Enter Your Employee Number</label>
+                <input formControlName="employee_id" type="text" class="form-control">
+            </div>
+            <div class="btn-row mt-4">
+                <button type="submit" class="btn btn-primary ml-5" (click)="addInAm()">IN AM</button>
+                <button type="submit" class="btn btn-primary ml-3" (click)="addOutAm()">OUT AM</button>
+                <button type="submit" class="btn btn-primary ml-3" >IN PM</button>
+                <button type="submit" class="btn btn-primary ml-3" >OUT PM</button>
+            </div>
+        </form>
+        <div *ngIf="!success" style="margin-top: 10%;"> </div>
+
+        <div *ngIf="success" class="alert alert-success mt-5" role="alert">
+            <h4 class="alert-heading">Success!</h4>
+            <p>User, Your Attendance Successfully has been recorded.</p>
+        </div>
+    </div>
+</div>
+</div>

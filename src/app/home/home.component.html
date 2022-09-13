@@ -1,0 +1,31 @@
+<!-- <div class="container-fluid page">
+  <div class="d-flex page__box p-3 mt-2">Home</div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute text-center">
+      Home Content Goes Here
+    </div>
+  </div>
+</div> -->
+<h1 class="text-success text-center fw-bold">Product Information</h1>
+<div class="container">
+  <div class="row">
+    <ng-container>
+      <div class="col-md-4" *ngFor="let item of product">
+        <div class="card">
+          <img src="../../assets/img/{{item.image}}" alt="">
+          <h3 style="white-space: normal;overflow: hidden;text-overflow: ellipsis;max-width: 100ch; font-size: 400;">
+            Product Code: {{item.brandId}}</h3>
+          <h3 style="white-space: normal;overflow: hidden;text-overflow: ellipsis;max-width: 100ch; font-size: 400;">
+           Title: {{item.productname}}</h3>
+          <h3 style="white-space: normal;overflow: hidden;text-overflow: ellipsis;max-width: 100ch; font-size: 400;">
+            Catagory: {{item.product_title}}</h3>
+          <p class="desc" >{{item.product_info}}</p>
+          
+          <p><strong>Price:</strong> {{item.product_price}}</p>
+
+        </div>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

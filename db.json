@@ -1,0 +1,154 @@
+{
+  "posts": [
+    {
+      "firstname": "Nur",
+      "lastname": "Islam",
+      "birthdate": "1996-04-11",
+      "gender": "m",
+      "education": "Graduate",
+      "company": "Daraz Bangladesh Ltd.",
+      "jobExperience": 0.2,
+      "salary": 1.2,
+      "profile": "Image of Rajib.jpeg",
+      "id": 1
+    },
+    {
+      "firstname": "Shahid",
+      "lastname": "Ullah",
+      "birthdate": "1996-02-14",
+      "gender": "m",
+      "education": "Graduate",
+      "company": "Daraz Bangladesh Ltd.",
+      "jobExperience": 0.2,
+      "salary": 1.2,
+      "profile": "image.jpg",
+      "id": 2
+    }
+  ],
+  "mess": [
+    {
+      "title": "New Message!",
+      "content": "Check our new order and create / ready PO for responsive department. \n\nRegards Aftab(CEO)",
+      "dateTime": "2022-08-13T20:28:36.502Z",
+      "id": 1
+    },
+    {
+      "title": "Check Message !",
+      "content": "Hello World.",
+      "dateTime": "2022-08-20T08:16:11.754Z",
+      "id": 2
+    }
+  ],
+  "loginUser": [
+    {
+      "fullname": "MD Shahid Ullah",
+      "email": "mdbaharkhan870@gmail.com",
+      "password": "123456",
+      "mobile": "01836934445",
+      "role": "user",
+      "image": "image.jpg",
+      "id": 1
+    },
+    {
+      "email": "aftabdolon47@gmail.com",
+      "password": "123456",
+      "fullname": "Aftab Dolon",
+      "mobile": "01846125306",
+      "role": "user",
+      "image": "Image of Aftab.jpg",
+      "id": 2
+    },
+    {
+      "email": "info.nurislamrajib@gmail.com",
+      "password": "123456",
+      "fullname": "Nur Islam",
+      "mobile": "01639170615",
+      "dateTime": "2022-08-13T20:28:36.502Z",
+      "role": "user",
+      "image": "Image of Rajib.jpeg",
+      "id": 3
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "fullname": "Admin",
+      "mobile": "01639170615",
+      "dateTime": "2022-08-13T20:28:36.502Z",
+      "role": "admin",
+      "image": "admin.jpg",
+      "id": 4
+    },
+    {
+      "email": "baharkhan870@gmail.com",
+      "password": "123456",
+      "id": 5
+    }
+  ],
+  "product": [
+    {
+      "brandId": "#120",
+      "productname": "TShirt",
+      "product_title": "Shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 800",
+      "image": "polo2.jpg",
+      "id": 1
+    },
+    {
+      "brandId": "#121",
+      "productname": "Polo T-shirt",
+      "product_title": "T-shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 1200",
+      "image": "polo.jpg",
+      "id": 2
+    },
+    {
+      "brandId": "#122",
+      "productname": "Polo T-shirt",
+      "product_title": "T-Shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 900",
+      "image": "shirt2.jpg",
+      "id": 3
+    },
+    {
+      "brandId": "#119",
+      "productname": "Polo T-shirt",
+      "product_title": "T-Shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 700",
+      "image": "polo3.jpg",
+      "id": 4
+    },
+    {
+      "brandId": "#118",
+      "productname": "Formal Shirt",
+      "product_title": "Shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 1500",
+      "image": "new.jpg",
+      "id": 5
+    },
+    {
+      "brandId": "#125",
+      "productname": "T-Shirt",
+      "product_title": "T-Shirt",
+      "product_info": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "product_price": "BDT 500",
+      "image": "t-shirt.jpg",
+      "id": 6
+    }
+  ],
+  "loginInfo": [
+    {
+      "fullname": "MD Shahid Ullah",
+      "email": "mdbaharkhan870@gmail.com",
+      "dateTime": "",
+      "id": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

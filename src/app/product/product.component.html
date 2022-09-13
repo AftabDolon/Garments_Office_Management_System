@@ -1,0 +1,104 @@
+<!-- <h2 class="text-success text-center">Add New Products</h2>
+<div class="container">
+    <div class="text-center text-success fw-bold mb-5">
+
+        <form enctype="multipart/form-data">
+            <label>Import Excel File</label>
+            <input id="upload" type=file name="files[]">
+            
+
+        </form>
+
+
+    </div>
+    <form>
+
+        <div class="input-field">
+            <table class="table table-bordered table-hover" id="table_field">
+                <tr>
+                    <th class="text-center">Product ID</th>
+                    <th class="text-center">Product Name</th>
+                    <th class="text-center">Product Title</th>
+                    <th class="text-center">Product Info</th>
+                    <th class="text-center">Product Price</th>
+                    <th class="text-center">Product Image</th>
+                    <th class="text-center">Add & Remove</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class='txtcode'><input class="from-control" type="text" name="fname" required
+                                [(ngModel)]="productForm.brandid"></td>
+                        <td class='txtdesc'><input class="from-control" type="text" name="email" required
+                                [(ngModel)]="productForm.productname"></td>
+                        <td class='txtprice'><input class="from-control" type="text" name="phone" required
+                                [(ngModel)]="productForm.productTitle"></td>
+                        <td class='txtqty'><input class="from-control" type="text" name="address" required
+                                [(ngModel)]="productForm.productInfo"></td>
+                        <td class='code'><input class="from-control" type="text" name="address" required
+                                [(ngModel)]="productForm.productPrice"></td>
+                        <td><input type="file" class="form-control" id="profile" #fileInput></td>
+                        <td class="text-center"><input class="btn btn-warning" type="button" name="address2" id="add"
+                                required="" value="Add"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+
+                <input type="submit" class="btn btn-success" name="save" id="save" (click)="create()" value="Save">
+            </div>
+        </div>
+
+    </form>
+</div> -->
+
+<h2 class="text-success text-center">Add New Products</h2>
+<div class="container">
+    <div class="text-center text-success fw-bold mb-5">
+
+        <form enctype="multipart/form-data">
+            <label>Import Excel File</label>
+            <input id="upload" type=file name="files[]">
+
+        </form>
+    </div>
+    <form [formGroup]="productForm">
+
+        <div class="input-field">
+            <table class="table table-bordered table-hover" id="table_field">
+                <tr>
+                    <th class="text-center">Product ID</th>
+                    <th class="text-center">Product Name</th>
+                    <th class="text-center">Product Title</th>
+                    <th class="text-center">Product Info</th>
+                    <th class="text-center">Product Price</th>
+                    <th class="text-center">Product Image</th>
+                    <th class="text-center">Add & Remove</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td class='txtcode'><input class="form-control txtcodeValue" formControlName="brandId" type="text"
+                                ></td>
+                        <td class='txtdesc'><input class="form-control" formControlName="productname" type="text"
+                                name="email" required=""></td>
+                        <td class='txtprice'><input class="form-control" formControlName="product_title" type="text"
+                                name="phone" required=""></td>
+                        <td class='txtqty'><input class="form-control" formControlName="product_info" type="text"
+                                name="address" required=""></td>
+                        <td class='code'><input class="form-control" formControlName="product_price" type="text"
+                                name="address" required=""></td>
+                        <td><input type="file" class="form-control" id="profile" #fileInput></td>
+                        <td class="text-center"><input class="btn btn-warning" type="button" name="address2" id="add"
+                                required="" value="Add"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="text-center">
+
+                <!-- <input type="submit" class="btn btn-success" name="save" id="save" (click)="addProduct()" value="Save"> -->
+                <button type="button" class="btn btn-success" name="save" id="save" (click)="addProduct()" >Save</button>
+                
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,68 @@
+<div class="values">
+    <div class="val-box">
+        <i class='fas fa-users'></i>
+        <div>
+            <h3>8,267</h3>
+            <span>New Users</span>
+        </div>
+    </div>
+    <div class="val-box">
+        <i class='fas fa-shopping-cart'></i>
+        <div>
+            <h3>200,521</h3>
+            <span>Total Orders</span>
+        </div>
+    </div>
+    <div class="val-box">
+        <i class='fas fa-cubes'></i>
+        <div>
+            <h3>215,542</h3>
+            <span>Products Sell</span>
+        </div>
+    </div>
+    <div class="val-box">
+        <i class='fas fa-dollar-sign'></i>
+        <div>
+            <h3>$677.89</h3>
+            <span>This Month</span>
+        </div>
+    </div>
+
+</div>
+<!-- <button (click)="exportexcel()">Export to Excel</button> -->
+<div class="board"  id="excel-table">
+    <table width="100%">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Title</td>
+                <td>Status</td>
+                <td>Role</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of allPerson">
+                <td class="people">
+                    <img src="../../assets/img/{{item.image}}" alt="">
+                    <div class="people-de">
+                        <h5>{{item.fullname}}</h5>
+                        <p>{{item.email}}</p>
+                    </div>
+                </td>
+                <td class="people-des">
+                    <h5>{{item.title}}</h5>
+                    <p>{{item.department}}</p>
+                </td>
+                <td [className]="item.status !== 'Active' ? 'in-active' : 'active'">
+                    <p>{{item.status}}</p>
+                </td>
+                <td class="role">
+                    <p>{{item.role}}</p>
+                </td>
+                <td class="edit"><a href="#">Edit</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
